@@ -8,7 +8,9 @@
 
 </head>
 <body>
-    <ul style="display:flex; gap: 40px;">
+    <header>
+        <nav>
+        <ul style="display:flex; gap: 40px;">
         <li style="list-style: none; padding-left: 50px;"><a href="index.html">Home</a></li>
         <li style="list-style: none;padding-left: 50px;"><a href="project.html">Projects</a></li>
         <li style="list-style: none;padding-left: 50px;"><a href="gallery.html">Gallery</a></li>
@@ -16,15 +18,21 @@
         <li style="list-style: none;padding-left: 50px;"><a href="services.html">Services</a></li>
         <li style="list-style: none;padding-left: 50px;"><a href="education.html">Education</a></li>
         <li style="list-style: none;padding-left: 50px;"><a href="contact.html">Contact Me</a></li>
-       
         </ul>
+        </nav>
+    </header>
         <div style="display: flex; flex-direction: row;align-items: center; ">
             <img src="images/1707280621861.jpg" width="200px" height="200px" style="border-radius: 50%; display: block;">
             <div style="padding-top: 120px;"><h1 style="margin-left: 20px;">Hameed Gul</h1>
                 <p style="margin-left: 20px; margin-top: 10px;">Web Developer</p> 
                 <!-- <img style="margin-left: 20px; width:90px; height:90px" src="images/Interwind-1s-200px.gif" alt=""> -->
-                <img style="margin-left: 20px; width:90px; height:90px" src="images/Ripple-1s-200px.gif" alt="">
-                
+                <!-- <img style="margin-left: 20px; width:90px; height:90px" src="images/Ripple-1s-200px.gif" alt="">
+                 -->
+                 <i id="audioIcon" style="font-size: 40px;" class="fa-solid fa-microphone"></i>
+
+                 <audio id="audio" src="audio/Intro.aac"></audio>
+                 
+
             </div>
         </div>
         <h1 id="about">Hi,There !</h1>
@@ -38,6 +46,17 @@
             <li style="list-style: none;"><div style="display: flex;flex-direction: row;align-items: center;"><i style="font-size: 30px;" class="fa-brands fa-github"></i> <h3 style="margin-left: 10px;"><a href="https://github.com/hameedgul12345">GitHub</a></h3></div></li>
         
         </ul>
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 Portfolio. All rights reserved.</p>
+            </div>
+        </footer>
+        <script>
+            document.getElementById('audioIcon').addEventListener('click', function() {
+              var audio = document.getElementById('audio');
+              audio.play();
+            });
+            </script>
         </body>
 
         </html>
